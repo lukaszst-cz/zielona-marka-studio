@@ -11,6 +11,10 @@ Nowoczesna, responsywna strona demonstracyjna dla studia graficznego i drukarni.
 
 Wszystkie dane kontaktowe, zlecenia i wskaźniki w projekcie są demonstracyjne. Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
 
+## Działająca prezentacja
+
+[Otwórz Zielona Marka Studio](https://zielona-marka-portfolio.l-st-cz.chatgpt.site)
+
 ## Informacje techniczne
 
 ## Prerequisites
