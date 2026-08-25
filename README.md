@@ -1,8 +1,17 @@
-# vinext-starter
+# Zielona Marka Studio
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+Nowoczesna, responsywna strona demonstracyjna dla studia graficznego i drukarni. Projekt łączy ofertę, realizacje, formularz kontaktowy oraz interaktywny panel PrintFlow pokazujący przepływ zleceń i role zespołu.
+
+## Co pokazuje
+
+- dopracowany interfejs strony firmowej,
+- widoki oferty, realizacji i kontaktu,
+- panel demonstracyjny z kolejką zleceń,
+- przykładową architekturę aplikacji React oraz API.
+
+Wszystkie dane kontaktowe, zlecenia i wskaźniki w projekcie są demonstracyjne. Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
+
+## Informacje techniczne
 
 ## Prerequisites
 
