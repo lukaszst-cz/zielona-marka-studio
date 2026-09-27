@@ -1,86 +1,55 @@
 # Zielona Marka Studio
 
-Nowoczesna, responsywna strona demonstracyjna dla studia graficznego i drukarni. Projekt łączy ofertę, realizacje, formularz kontaktowy oraz interaktywny panel PrintFlow pokazujący przepływ zleceń i role zespołu.
+Techniczny wariant aplikacyjny Zielonej Marki pokazujący połączenie publicznej strony usługowej z prywatnym zapleczem do obsługi zapytań, projektów i zadań.
+
+Projekt jest demonstracją architektury React/Vinext + Cloudflare Workers + D1/Drizzle. Nie zawiera prawdziwych danych klientów, haseł ani produkcyjnych sekretów.
 
 ## Co pokazuje
 
-- dopracowany interfejs strony firmowej,
-- widoki oferty, realizacji i kontaktu,
-- panel demonstracyjny z kolejką zleceń,
-- przykładową architekturę aplikacji React oraz API.
+- responsywną stronę usługową,
+- formularz zapytania zapisujący dane do backendu,
+- prywatne Studio dla właściciela,
+- encje zapytań, projektów i zadań,
+- Cloudflare D1 z migracjami Drizzle,
+- API do pracy ze Studio,
+- podstawowe zabezpieczenie prywatnego panelu i sesji.
 
-Wszystkie dane kontaktowe, zlecenia i wskaźniki w projekcie są demonstracyjne. Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
+## Technologia
 
-## Działająca prezentacja
+- React 19
+- TypeScript
+- Vinext / Vite
+- Cloudflare Workers
+- Cloudflare D1
+- Drizzle ORM
 
-[Otwórz Zielona Marka Studio](https://zielona-marka.pl/studio)
+## Uruchomienie lokalne
 
-## Informacje techniczne
-
-## Prerequisites
-
-- Node.js `>=22.13.0`
-
-## Quick Start
+Wymagany jest Node.js 22.13 lub nowszy.
 
 ```bash
-npm install
+npm ci
 npm run dev
-npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+Weryfikacja:
 
-## Included Shape
-
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-Signed-in visitors receive both `oai-authenticated-user-id` and `oai-authenticated-user-email`. Private Sites require every visitor to sign in; public Sites may also have anonymous visitors, for whom neither header is present.
-
-The user ID is stable for the same user on the same Site and different across Sites. Email and name are intended for display or contact purposes.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const userId = requestHeaders.get("oai-authenticated-user-id");
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```bash
+npm test
 ```
 
-## Useful Commands
+Test buduje projekt i sprawdza render strony głównej, prywatny charakter Studio oraz konfigurację D1.
 
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+## Dane i bezpieczeństwo
 
-## Learn More
+- repozytorium nie powinno zawierać haseł, tokenów ani plików `.env`,
+- dane demonstracyjne nie powinny zawierać informacji o rzeczywistych klientach,
+- Studio wymaga kontroli właściciela po stronie serwera,
+- konfiguracja produkcyjna i sekrety środowiskowe pozostają poza repozytorium,
+- publiczne demo nie powinno być traktowane jako gotowy system SaaS.
 
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+## Powiązane projekty
+
+- [Zielona Marka](https://zielona-marka.pl)
+- [Zielona Marka WordPress](https://github.com/lukaszst-cz/zielona-marka-wordpress)
+- [Publiczne portfolio](https://github.com/lukaszst-cz/zielona-marka-public-portfolio)
