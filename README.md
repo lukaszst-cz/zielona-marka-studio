@@ -53,3 +53,10 @@ Test buduje projekt i sprawdza render strony głównej, prywatny charakter Studi
 - [Zielona Marka](https://zielona-marka.pl)
 - [Zielona Marka WordPress](https://github.com/lukaszst-cz/zielona-marka-wordpress)
 - [Publiczne portfolio](https://github.com/lukaszst-cz/zielona-marka-public-portfolio)
+
+## Autor, darmowe projekty i wsparcie
+
+Projekt jest udostępniany bezpłatnie jako demonstracja i portfolio. Jeśli jest przydatny, można dobrowolnie wesprzeć dalszy rozwój: **[Postaw Naleśnikowi++ kawę ☕](https://buymeacoffee.com/nalesnik_plus_plus)**.
+
+Potrzebujesz własnej strony WWW, formularza wyceny albo prostego systemu dla firmy? **[Zobacz Zielona Marka →](https://zielona-marka.pl)**.
+
