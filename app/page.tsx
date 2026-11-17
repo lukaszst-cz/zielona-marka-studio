@@ -165,7 +165,7 @@ export default function Home() {
           aria-label="Zielona Marka — strona główna"
         >
           <img className="brand-logo" src="/logo.png" alt="" />
-          <span>ZIELONA MARKA</span>
+          <span>Zielona Marka</span>
         </Link>
         <div className="nav-links">
           <a href="#realizacje">Realizacje</a>
@@ -515,7 +515,7 @@ export default function Home() {
         <div className="shell footer-grid">
           <Link className="brand" href="/">
             <span className="footer-logo-plate"><img className="brand-logo" src="/logo.png" alt="" /></span>
-            <span>ZIELONA MARKA</span>
+            <span>Zielona Marka</span>
           </Link>
           <p>
             Projektowanie i wdrażanie stron internetowych dla świadomych marek.
@@ -523,9 +523,9 @@ export default function Home() {
           <div>
             <Link href="/studio">Studio pracy</Link>
             <Link href="/polityka-prywatnosci">Prywatność</Link>
-            <a href="#">Instagram</a>
+            <a href="https://www.instagram.com/zielona.marka.pl/" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
-          <small>© {new Date().getFullYear()} Zielona Marka</small>
+          <small>© {new Date().getFullYear()} Zielona Marka · Łukasz Staniewicz</small>
         </div>
         <div className="shell footer-billing-details" id="fakturowanie" aria-label="Informacje o rozliczeniach i dane do faktury">
           <section><h2>Obecne rozliczenia i dane do faktury: Bizky Freelance</h2><p><strong>Bizky sp. z o.o.</strong><br />Al. Księcia Józefa Poniatowskiego 1, klatka K4, poziom 1<br />03-901 Warszawa, Polska<br />NIP: 7010150265 · KRS: 0000312229<br /><a href="https://bizky.ai/" target="_blank" rel="noopener noreferrer">bizky.ai</a></p></section>
