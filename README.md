@@ -51,8 +51,9 @@ Test buduje projekt i sprawdza render strony głównej, prywatny charakter Studi
 ## Powiązane projekty
 
 - [Zielona Marka](https://zielona-marka.pl)
-- [Zielona Marka WordPress](https://github.com/lukaszst-cz/zielona-marka-wordpress)
-- [Publiczne portfolio](https://github.com/lukaszst-cz/zielona-marka-public-portfolio)
+- [Repozytorium głównej strony Zielonej Marki](https://github.com/lukaszst-cz/zielona-marka-pl)
+- [Portfolio projektów na stronie](https://zielona-marka.pl/portfolio)
+- [Publiczny zbiór demonstracji i archiwum](https://github.com/lukaszst-cz/zielona-marka-public-portfolio)
 
 ## Autor, darmowe projekty i wsparcie
 
